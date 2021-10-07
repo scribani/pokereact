@@ -1,4 +1,6 @@
 .DS_Store
 .cache
+.yarn
+.yarnrc.yml
 dist
 node_modules
