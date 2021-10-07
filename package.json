@@ -1,0 +1,33 @@
+{
+  "name": "pokereact",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "repository": "https://github.com/codeableorg/poke-react-js",
+  "author": "vampaynani",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "src/static/images",
+        "staticOutDir": "images"
+      }
+    ]
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
