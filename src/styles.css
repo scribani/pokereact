@@ -1,4 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Roboto&family=Source+Sans+Pro&display=swap");
+
+:root {
+  --font-white: #ffffff;
+  --font-grey-secondary: #bfbfbf;
+  --bg-yellow: #f5db13;
+  --bg-normal: linear-gradient(
+    270deg,
+    rgba(142, 172, 158, 1) 0.15%,
+    rgba(182, 182, 168, 1) 100%
+  );
+  --bg-fire: linear-gradient(
+    270deg,
+    rgba(215, 85, 56, 1) 0.15%,
+    rgba(255, 95, 66, 1) 100%
+  );
+  --bg-water: linear-gradient(
+    270deg,
+    rgba(41, 158, 245, 1) 0.15%,
+    rgba(81, 168, 255, 1) 100%
+  );
+  --bg-electric: linear-gradient(
+    270deg,
+    rgba(215, 201, 71, 1) 0.15%,
+    rgba(255, 211, 81, 1) 100%
+  );
+  --bg-grass: linear-gradient(
+    270deg,
+    rgba(99, 201, 100, 1) 0.15%,
+    rgba(139, 211, 110, 1) 100%
+  );
+  --bg-ice: linear-gradient(
+    270deg,
+    rgba(84, 201, 245, 1) 0.15%,
+    rgba(124, 211, 255, 1) 100%
+  );
+  --bg-fighting: linear-gradient(
+    270deg,
+    rgba(157, 100, 85, 1) 0.15%,
+    rgba(197, 110, 95, 1) 100%
+  );
+  --bg-poison: linear-gradient(
+    270deg,
+    rgba(142, 100, 178, 1) 0.15%,
+    rgba(182, 110, 168, 1) 100%
+  );
+  --bg-ground: linear-gradient(
+    270deg,
+    rgba(186, 187, 100, 1) 0.15%,
+    rgba(226, 197, 110, 1) 100%
+  );
+  --bg-flying: linear-gradient(
+    270deg,
+    rgba(113, 178, 245, 1) 0.15%,
+    rgba(153, 168, 255, 1) 100%
+  );
+  --bg-psychic: linear-gradient(
+    270deg,
+    rgba(215, 100, 158, 1) 0.15%,
+    rgba(255, 110, 168, 1) 100%
+  );
+  --bg-bug: linear-gradient(
+    270deg,
+    rgba(142, 187, 56, 1) 0.15%,
+    rgba(182, 197, 66, 1) 100%
+  );
+  --bg-rock: linear-gradient(
+    270deg,
+    rgba(157, 172, 114, 1) 0.15%,
+    rgba(197, 182, 124, 1) 100%
+  );
+  --bg-ghost: linear-gradient(
+    270deg,
+    rgba(84, 114, 187, 1) 0.15%,
+    rgba(124, 124, 197, 1) 100%
+  );
+  --bg-dragon: linear-gradient(
+    270deg,
+    rgba(99, 114, 230, 1) 0.15%,
+    rgba(139, 124, 240, 1) 100%
+  );
+  --bg-dark: linear-gradient(
+    270deg,
+    rgba(99, 100, 85, 1) 0.15%,
+    rgba(139, 110, 95, 1) 100%
+  );
+  --bg-steel: linear-gradient(
+    270deg,
+    rgba(142, 172, 187, 1) 0.15%,
+    rgba(182, 182, 197, 1) 100%
+  );
+  --bg-fairy: linear-gradient(
+    270deg,
+    rgba(200, 158, 230, 1) 0.15%,
+    rgba(240, 168, 240, 1) 100%
+  );
+  --border-gray: 1px solid #bfbfbf;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Karla;
+  background: var(--bg-ghost);
+}
+
 h1 {
   color: hotpink;
-  font-family: cursive;
+  background: var(--bg-steel);
 }
