@@ -1,12 +1,13 @@
 export default {
   links: [
-    { text: "Home", path: "/" },
+    { text: "Home", path: "/", selected: true },
     { text: "Pokédex", path: "/pokedex" },
     { text: "Legendaries", path: "/pokedex/legendaries" },
     { text: "Documentation", path: "/documentation" },
   ],
   filters: {
-    type: [
+    types: [
+      { text: "Type", value: "DEFAULT", disabled: true },
       { text: "Bug", value: "bug" },
       { text: "Dark", value: "dark" },
       { text: "Dragon", value: "dragon" },
@@ -27,14 +28,14 @@ export default {
       { text: "Water", value: "water" },
     ],
     attack: [
-      { text: "Attack", value: "", selected: true, disabled: true },
-      { text: "Lowest base attack (First)", value: "lowest" },
-      { text: "Highest base attack (First)", value: "highest" },
+      { text: "Attack", value: "DEFAULT", disabled: true },
+      { text: "Lowest first", value: "lowest" },
+      { text: "Highest first", value: "highest" },
     ],
     experience: [
-      { text: "Experience", value: "", selected: true, disabled: true },
-      { text: "Lowest base experience (First)", value: "lowest" },
-      { text: "Highest base experience (First)", value: "highest" },
+      { text: "Experience", value: "DEFAULT", disabled: true },
+      { text: "Lowest first", value: "lowest" },
+      { text: "Highest first", value: "highest" },
     ],
   },
   cards: [
@@ -44,7 +45,7 @@ export default {
       attack: 60,
       defense: 75,
       experience: 173,
-      type: ["fairy"],
+      types: ["Fairy"],
     },
     {
       id: 144,
@@ -52,7 +53,7 @@ export default {
       attack: 85,
       defense: 100,
       experience: 261,
-      type: ["ice", "flying"],
+      types: ["Ice", "Flying"],
     },
     {
       id: 182,
@@ -60,7 +61,7 @@ export default {
       attack: 80,
       defense: 95,
       experience: 221,
-      type: ["grass"],
+      types: ["Grass"],
     },
     {
       id: 152,
@@ -68,7 +69,7 @@ export default {
       attack: 49,
       defense: 65,
       experience: 64,
-      type: ["grass"],
+      types: ["Grass"],
     },
     {
       id: 852,
@@ -76,7 +77,7 @@ export default {
       attack: 68,
       defense: 60,
       experience: 62,
-      type: ["fighting"],
+      types: ["Fighting"],
     },
     {
       id: 415,
@@ -84,7 +85,7 @@ export default {
       attack: 30,
       defense: 42,
       experience: 49,
-      type: ["bug", "flying"],
+      types: ["Bug", "Flying"],
     },
     {
       id: 823,
@@ -92,7 +93,7 @@ export default {
       attack: 87,
       defense: 105,
       experience: 248,
-      type: ["flying", "steel"],
+      types: ["Flying", "Steel"],
     },
     {
       id: 483,
@@ -100,7 +101,7 @@ export default {
       attack: 120,
       defense: 120,
       experience: 306,
-      type: ["steel", "dragon"],
+      types: ["Steel", "Dragon"],
     },
     {
       id: 196,
@@ -108,7 +109,7 @@ export default {
       attack: 65,
       defense: 60,
       experience: 184,
-      type: ["psychic"],
+      types: ["Psychic"],
     },
     {
       id: 136,
@@ -116,7 +117,7 @@ export default {
       attack: 130,
       defense: 60,
       experience: 184,
-      type: ["fire"],
+      types: ["Fire"],
     },
     {
       id: 873,
@@ -124,7 +125,7 @@ export default {
       attack: 65,
       defense: 60,
       experience: 166,
-      type: ["ice", "bug"],
+      types: ["Ice", "Bug"],
     },
     {
       id: 162,
@@ -132,7 +133,7 @@ export default {
       attack: 76,
       defense: 64,
       experience: 145,
-      type: ["normal"],
+      types: ["Normal"],
     },
     {
       id: 94,
@@ -140,7 +141,7 @@ export default {
       attack: 65,
       defense: 60,
       experience: 225,
-      type: ["ghost", "poison"],
+      types: ["Ghost", "Poison"],
     },
     {
       id: 472,
@@ -148,7 +149,7 @@ export default {
       attack: 95,
       defense: 125,
       experience: 179,
-      type: ["ground", "flying"],
+      types: ["Ground", "Flying"],
     },
     {
       id: 706,
@@ -156,7 +157,7 @@ export default {
       attack: 100,
       defense: 70,
       experience: 270,
-      type: ["dragon"],
+      types: ["Dragon"],
     },
     {
       id: 385,
@@ -164,7 +165,7 @@ export default {
       attack: 100,
       defense: 100,
       experience: 270,
-      type: ["steel", "psychic"],
+      types: ["Steel", "Psychic"],
     },
     {
       id: 595,
@@ -172,7 +173,7 @@ export default {
       attack: 47,
       defense: 50,
       experience: 64,
-      type: ["bug", "electric"],
+      types: ["Bug", "Electric"],
     },
     {
       id: 404,
@@ -180,7 +181,7 @@ export default {
       attack: 85,
       defense: 49,
       experience: 127,
-      type: ["electric"],
+      types: ["Electric"],
     },
     {
       id: 66,
@@ -188,7 +189,7 @@ export default {
       attack: 80,
       defense: 50,
       experience: 61,
-      type: ["fighting"],
+      types: ["Fighting"],
     },
     {
       id: 262,
@@ -196,7 +197,7 @@ export default {
       attack: 90,
       defense: 70,
       experience: 147,
-      type: ["dark"],
+      types: ["Dark"],
     },
     {
       id: 350,
@@ -204,7 +205,7 @@ export default {
       attack: 60,
       defense: 79,
       experience: 189,
-      type: ["water"],
+      types: ["Water"],
     },
     {
       id: 429,
@@ -212,7 +213,7 @@ export default {
       attack: 60,
       defense: 60,
       experience: 173,
-      type: ["ghost"],
+      types: ["Ghost"],
     },
     {
       id: 32,
@@ -220,7 +221,7 @@ export default {
       attack: 57,
       defense: 40,
       experience: 55,
-      type: ["poison"],
+      types: ["Poison"],
     },
     {
       id: 793,
@@ -228,7 +229,7 @@ export default {
       attack: 53,
       defense: 47,
       experience: 257,
-      type: ["rock", "poison"],
+      types: ["Rock", "Poison"],
     },
     {
       id: 862,
@@ -236,7 +237,7 @@ export default {
       attack: 90,
       defense: 101,
       experience: 260,
-      type: ["dark", "normal"],
+      types: ["Dark", "Normal"],
     },
     {
       id: 138,
@@ -244,7 +245,7 @@ export default {
       attack: 40,
       defense: 100,
       experience: 71,
-      type: ["rock", "water"],
+      types: ["Rock", "Water"],
     },
     {
       id: 53,
@@ -252,7 +253,7 @@ export default {
       attack: 70,
       defense: 60,
       experience: 154,
-      type: ["normal"],
+      types: ["Normal"],
     },
     {
       id: 172,
@@ -260,7 +261,7 @@ export default {
       attack: 40,
       defense: 15,
       experience: 41,
-      type: ["electric"],
+      types: ["Electric"],
     },
     {
       id: 393,
@@ -268,7 +269,7 @@ export default {
       attack: 51,
       defense: 53,
       experience: 63,
-      type: ["water"],
+      types: ["Water"],
     },
     {
       id: 821,
@@ -276,7 +277,7 @@ export default {
       attack: 47,
       defense: 35,
       experience: 49,
-      type: ["flying"],
+      types: ["Flying"],
     },
     {
       id: 373,
@@ -284,7 +285,7 @@ export default {
       attack: 135,
       defense: 80,
       experience: 270,
-      type: ["dragon", "flying"],
+      types: ["Dragon", "Flying"],
     },
     {
       id: 28,
@@ -292,7 +293,7 @@ export default {
       attack: 100,
       defense: 110,
       experience: 158,
-      type: ["ground"],
+      types: ["Ground"],
     },
     {
       id: 218,
@@ -300,7 +301,7 @@ export default {
       attack: 40,
       defense: 40,
       experience: 50,
-      type: ["fire"],
+      types: ["Fire"],
     },
     {
       id: 791,
@@ -308,7 +309,7 @@ export default {
       attack: 137,
       defense: 107,
       experience: 306,
-      type: ["psychic", "steel"],
+      types: ["Psychic", "Steel"],
     },
     {
       id: 317,
@@ -316,7 +317,7 @@ export default {
       attack: 73,
       defense: 83,
       experience: 163,
-      type: ["poison"],
+      types: ["Poison"],
     },
     {
       id: 888,
@@ -324,7 +325,7 @@ export default {
       attack: 170,
       defense: 115,
       experience: 360,
-      type: ["fairy"],
+      types: ["Fairy"],
     },
   ],
 };
