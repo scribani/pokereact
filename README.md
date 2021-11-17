@@ -1,46 +1,22 @@
 # PokeReact
 
-### Notes
+<p align="center">
+  <img src="https://github.com/scribani/pokereact/blob/main/src/static/images/logo.png?raw=true" alt="logo" width="200px">
+</p>
 
-- Replicate the Figma design placed at:
-  https://www.figma.com/file/7XF8BXBMex5PE5KIQlbuYZ/Pokedex-Desktop?node-id=0%3A1
+The user interface for a pokemon fan page made using React components.
 
-### Requirements
+## Features
 
-- Docker
+- Display pokedex information for many pokemon
+- Store script to manage data
+- Easy to follow file and folder structure
+- Pixel perfect result based on Figma design
 
-_Docker dependencies_
+## Built With
 
-- Node
-- Yarn
-- Parcel v1
-- React & React DOM
+- React-components
+- HTML
+- CSS
 
-### Get started
-
-- Clone the repo
-- build the attached Docker image
-  ```bash
-  docker build -t codeableorg/pokereact .
-  ```
-- Run your docker container bash
-
-  ```bash
-  docker run --name pokereact -it -v $(pwd):/app -p 1234:1234 --rm codeableorg/pokereact bash
-  ```
-
-  - From inside the docker container run:
-
-  ```bash
-  yarn install
-  ```
-
-  - Once the packages are installed, `exit` from the container
-
-- Run your docker container without a command, it will run the one set by default (`yarn start`).
-  ```bash
-  docker run --name pokereact -it -v $(pwd):/app -p 1234:1234 --rm codeableorg/pokereact
-  ```
-- Open your browser at http://localhost:1234
-
-### You are ready to start coding!
+Figma design this project is based on, can be found [here](https://www.figma.com/file/7XF8BXBMex5PE5KIQlbuYZ/Pokedex-Desktop?node-id=1%3A154)
